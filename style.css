@@ -1,5 +1,164 @@
+/* reset do css */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* variáveis */
+
+:root {
+    --background: #0b1120;
+    --background-secondary: #111827;
+
+    --text: #f8fafc;
+    --text-secondary: #94a3b8;
+
+    --primary: #3b82f6;
+    --primary-hover: #2563eb;
+
+    --border: rgba(255,255,255,.08);
+
+    --shadow: 0 20px 60px rgba(0,0,0,.45);
+}
+
+/* body */
+
+body {
+
+    font-family: 'Inter', sans-serif;
+
+    background: radial-gradient(circle at top, rgba(59,130,246,.12), transparent 45%), var(--background);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* container */
+
+.container {
+    flex: 1;
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* logo */
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+}
+
+/* nome */
+
+h1{
+    font-size: clamp(2.5rem, 6vw, 3rem);
+    margin: 3rem 1rem;
+}
+
+/* mensagem */
+
+.message{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* descrição */
+
+.description{
+    color: var(--text-secondary);
+    line-height: 1.8;
+    max-width: 600px;
+    margin-bottom: 3rem;
+}
+
+/* botões */
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* links */
+
+.buttons a{
+    text-decoration: none;
+    color: white;
+    padding: .9rem 1.6rem;
+    border-radius: 10px;
+    transition: .3s;
+    border: 1px solid var(--border);
+    background: var(--background-secondary);
+}
+
+/* hover */
+
+.buttons a:hover{
+    background: var(--primary);
+    transform: translateY(-3px);
+}
+
+/* rodapé */
+
+footer{
+    padding: 2rem;
+    text-align: center;
+}
+
+/* linha do footer */
+
+.footer-divider{
+    width: 380px;
+    height: 1px;
+    background: rgba(255, 255, 255, .12);
+    margin: 0 auto 1rem;
+}
+
+/* frase do footer */
+
+.footer-quote{
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+/* copyright */
+
+.copyright{
+    color: #64748b;
+    font-size: .85rem;
+}
+
+/* responsividade */
+
+@media (max-width:600px){
+
+    .buttons{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .buttons a{
+        width: 100%;
+    }
 }
