@@ -62,7 +62,7 @@ body {
     font-size: 2rem;
     font-weight: 700;
     color: var(--primary);
-    margin-bottom: 2rem;
+    margin: 2rem;
     box-shadow: var(--shadow);
 }
 
@@ -158,6 +158,10 @@ footer{
 
    .container{
         padding: 1rem;
+    }
+
+    .logo{
+        margin: 1rem;
     }
 
     .buttons{
