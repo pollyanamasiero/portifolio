@@ -144,6 +144,10 @@ footer{
     margin-bottom: 1rem;
 }
 
+.quebra {
+    display: inline;
+}
+
 /* copyright */
 
 .copyright{
@@ -166,10 +170,14 @@ footer{
 
     .buttons{
         flex-direction: column;
-        width:100%;
+        width: 80%;
     }
 
     .buttons a{
-        width:100%;
+        width: 100%;
+    }
+
+    .quebra {
+        display: block;
     }
 }
